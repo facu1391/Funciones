@@ -1,2 +1,2 @@
-# Funciones - Privacidad - Abtracción - Encapsulación
+# Funciones - Privacidad - Abtracción - Encapsulación - Herencia
 POO-Java
