@@ -1,2 +1,2 @@
-# Funciones
-Funciones-Java
+# Funciones - Privacidad - Abtracción - Encapsulación
+POO-Java
