@@ -1,47 +1,44 @@
 public class Main {
-    
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-        Persona nombre = new Persona();
-        nombre.setNombre("Juan");  
+        Cliente cliente = new Cliente();
+        cliente.nombre = "juan";
+        cliente.edad = 31;
+        cliente.telefono = 452145996;
+        cliente.credito = "Select";
 
-        Persona edad = new Persona();
-        edad.setEdad(30);   
+        Trabajador trabajador = new Trabajador();
+        trabajador.nombre = "Pedro";
+        trabajador.edad = 40;
+        trabajador.telefono = 4431351;
+        trabajador.salario = "$15000";
 
-        Persona telefono = new Persona();
-        telefono.setTelefono("3804965874");
+        System.out.println(cliente.nombre);
+        System.out.println(cliente.edad);
+        System.out.println(cliente.edad);
+        System.out.println(cliente.telefono);
+        System.out.println(cliente.credito);
 
-        System.out.println(nombre.getNombre());
-        System.out.println(edad.getEdad());
-        System.out.println(telefono.getTelefono());
+        System.out.println(trabajador.nombre);
+        System.out.println(trabajador.edad);
+        System.out.println(trabajador.telefono);
+        System.out.println(trabajador.salario);
     }
 }
 
+
 class Persona {
-    private String nombre;
-    private int edad;
-    private String telefono;
+    String nombre;
+    int edad;
+    int telefono;
+}
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+class Cliente extends Persona {
+    String credito;
+}
 
-    public String getNombre() {
-        return this.nombre;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public int getEdad() {
-        return  this.edad;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getTelefono() {
-        return this.telefono;
-    }
+class Trabajador extends Persona {
+    String salario;
 }
